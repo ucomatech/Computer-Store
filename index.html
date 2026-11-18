@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="th">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ไอทีคอร์เนอร์ — อุปกรณ์ไอทีที่ใช่สำหรับคุณ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root{--navy:#102b44;--blue:#2579d0;--pale:#edf6ff;--ink:#183248;--muted:#687d8e;--line:#dce7ef;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7fafc;color:var(--ink);font-family:"Kanit",sans-serif}button,input,select,textarea{font-family:"Kanit",sans-serif}button,a,input,select,textarea{outline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f2a93b}button{cursor:pointer}button:disabled{opacity:.55;cursor:wait}
+    .wrap{width:min(1180px,calc(100% - 36px));margin:auto}.topbar{background:var(--navy);color:white}.top-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;color:white;text-decoration:none;font-size:23px;font-weight:700}.brand-mark{width:39px;height:39px;border-radius:12px;background:#48b9f2;display:grid;place-items:center;color:var(--navy)}.brand-mark svg{width:23px}.navlinks{display:flex;align-items:center;gap:26px}.navlinks a{color:#d9e9f5;text-decoration:none;font-size:14px}.navlinks a:hover{color:white}.viewbar{background:white;border-bottom:1px solid var(--line)}.view-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;flex-wrap:wrap}.view-inner p{margin:0;color:var(--muted);font-size:13px}.view-control{display:flex;align-items:center;gap:9px;font-size:13px}.view-control select{border:1px solid var(--line);border-radius:9px;background:#f7fafc;padding:7px 28px 7px 10px;color:var(--ink)}
+    .hero{background:linear-gradient(115deg,#102b44 0%,#16456a 58%,#206d9a 100%);color:white;overflow:hidden}.hero-inner{min-height:346px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px}.eyebrow{display:inline-block;background:#ffffff1c;border:1px solid #ffffff42;color:#bdeaff;border-radius:30px;padding:6px 13px;font-size:13px}.hero h1{font-size:clamp(33px,4vw,56px);line-height:1.16;margin:17px 0 13px;max-width:600px}.hero p{color:#d1e4f1;max-width:470px;margin:0 0 25px;font-size:16px}.primary{border:0;border-radius:10px;background:#42b9f2;color:#092d47;font-weight:600;padding:11px 19px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}.primary:hover{background:#77d0fa}.hero-art{position:relative;height:300px;display:grid;place-items:center}.hero-art img{width:88%;height:270px;object-fit:cover;border-radius:24px;transform:rotate(-4deg);box-shadow:0 24px 55px #061c3380}.hero-art:after{content:"NEW TECH • BETTER DAYS";position:absolute;bottom:15px;right:0;background:#fff;color:var(--navy);padding:10px 16px;border-radius:9px;font-size:12px;font-weight:700;letter-spacing:1px;transform:rotate(4deg)}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-23px;position:relative}.benefit{background:white;border:1px solid var(--line);border-radius:15px;padding:19px;box-shadow:0 10px 24px #153a5b0c;display:flex;align-items:center;gap:13px}.benefit i{color:var(--blue)}.benefit strong{display:block;font-size:15px}.benefit span{font-size:12px;color:var(--muted)}
+    .section{padding:57px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}.section-head h2{font-size:29px;margin:0 0 4px}.section-head p{margin:0;color:var(--muted);font-size:14px}.count{color:var(--muted);font-size:13px}.toolbar{display:flex;justify-content:space-between;gap:13px;flex-wrap:wrap;margin-bottom:22px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:white;border-radius:9px;padding:8px 14px;color:var(--muted)}.filter.active{background:var(--navy);color:white;border-color:var(--navy)}.search{position:relative;min-width:225px}.search svg{position:absolute;top:11px;left:12px;width:17px;color:var(--muted)}.search input{width:100%;border:1px solid var(--line);border-radius:9px;background:white;padding:9px 12px 9px 38px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.grid.list-view{grid-template-columns:1fr}.list-view .card{flex-direction:row}.list-view .card-image{width:220px;height:auto;min-height:170px;flex:none}.list-view .card-body{min-width:0}.list-view .description{min-height:0}.catalog-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.catalog-control{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--ink)}.catalog-control select{border:1px solid var(--line);border-radius:9px;background:white;padding:9px 10px;color:var(--ink)}@media(max-width:600px){.list-view .card-image{width:115px;min-height:150px}.list-view .card-body{padding:12px}.list-view .card h3{font-size:15px}.list-view .description{display:none}}.card{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 5px 20px #153a5b09}.card-image{height:190px;background:#eaf3f9;overflow:hidden}.card-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}.card:hover img{transform:scale(1.04)}.card-body{padding:17px;display:flex;flex-direction:column;flex:1}.tag{align-self:flex-start;background:#edf6ff;color:#24689d;border-radius:6px;padding:3px 8px;font-size:11px}.card h3{font-size:17px;line-height:1.3;margin:12px 0 5px}.description{font-size:12px;color:var(--muted);line-height:1.6;margin:0 0 13px;min-height:38px}.stock{font-size:12px;color:#41805b;margin:auto 0 10px}.stock.out{color:#b75c4a}.card-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px}.price{color:var(--blue);font-size:21px;font-weight:700}.small-btn{border:0;border-radius:8px;background:var(--navy);color:white;padding:8px 10px;display:inline-flex;gap:5px;align-items:center;font-size:12px}.small-btn:hover{background:#245781}.small-btn svg{width:15px;height:15px}.owner-actions{display:flex;gap:7px;margin-top:12px}.owner-actions button{flex:1;border:1px solid var(--line);border-radius:7px;background:white;padding:6px;color:var(--ink)}
+    .panel{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;margin:20px 0}.panel h2{margin:0 0 6px;font-size:23px}.panel p{color:var(--muted);margin:0 0 17px;font-size:14px}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:600}.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:8px;padding:10px;background:white;color:var(--ink);width:100%}.field textarea{min-height:85px;resize:vertical}.form-actions{display:flex;gap:9px;margin-top:17px}.secondary{border:1px solid var(--line);background:white;border-radius:9px;padding:10px 15px;color:var(--ink)}.image-note{font-size:12px;color:var(--muted);margin-top:5px}.account-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.cart-row{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:9px 0;gap:10px}.cart-row button{border:1px solid var(--line);background:white;border-radius:7px;padding:3px 9px}.cart-total{display:flex;justify-content:space-between;font-weight:700;font-size:19px;margin-top:16px}.empty{border:1px dashed #bbcedc;border-radius:12px;padding:30px;text-align:center;color:var(--muted);grid-column:1/-1}.about{background:#eaf4fb;padding:40px 0}.about-inner{display:flex;justify-content:space-between;gap:25px;align-items:center}.about h2{margin:0 0 7px}.about p{margin:0;color:#526d80}.footer{background:var(--navy);color:#b7cddc;padding:24px 0;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.notice{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:10;background:var(--navy);color:white;padding:11px 18px;border-radius:10px;box-shadow:0 12px 35px #0003;max-width:calc(100% - 30px)}.hidden{display:none!important}.load-state{font-size:13px;color:var(--muted);margin:12px 0}.warning{font-size:12px;color:#8a6040;background:#fff7e9;border:1px solid #f3dfb8;padding:10px 12px;border-radius:8px;margin:13px 0 0}
+    @media(max-width:950px){.grid{grid-template-columns:repeat(3,1fr)}.navlinks{gap:12px}}@media(max-width:700px){.hero-inner{grid-template-columns:1fr;padding:42px 0}.hero-art{display:none}.benefits{grid-template-columns:1fr;margin-top:15px}.grid{grid-template-columns:repeat(2,1fr)}.account-grid{grid-template-columns:1fr}.navlinks a{display:none}}@media(max-width:480px){.grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.section{padding:39px 0}.hero h1{font-size:35px}.card-image{height:220px}}
+  </style>
+  
+  
+  
+ </head>
+ <body>
+  <header class="topbar canva-header">
+   <div class="wrap top-inner">
+    <a href="#top" class="brand canva-link"><span class="brand-mark"><i data-lucide="monitor"></i></span> ไอทีคอร์เนอร์</a>
+    <nav class="navlinks canva-menu" aria-label="เมนูหลัก"><a href="#products" class="canva-link">สินค้าทั้งหมด</a><a href="#about" class="canva-link">เกี่ยวกับร้าน</a><a href="#workspace" class="canva-link">ตะกร้าสินค้า <span id="cart-count">0</span></a>
+    </nav>
+   </div>
+  </header>
+  <div class="viewbar">
+   <div class="wrap view-inner">
+    <p>ร้านค้าออนไลน์ • ระบบสาธิต</p>
+    <div class="view-control"><label for="role-select">มุมมอง</label><select id="role-select" class="canva-dropdown"><option value="guest">ผู้เยี่ยมชม</option><option value="member">สมาชิก</option><option value="owner">เจ้าของร้าน</option></select>
+    </div>
+   </div>
+  </div>
+  <main id="top">
+   <section class="hero canva-banner">
+    <div class="wrap hero-inner">
+     <div><span class="eyebrow canva-tag">YOUR EVERYDAY TECH STORE</span>
+      <h1>อัปเกรดทุกวัน<br>
+        ด้วยไอทีที่ใช่</h1>
+      <p>คัดสรรอุปกรณ์คอมพิวเตอร์และแก็ดเจ็ตที่ช่วยให้ทุกงานลื่นไหล ทุกไอเดียเป็นไปได้</p><a href="#products" class="primary canva-button">เลือกชมสินค้า <i data-lucide="arrow-right"></i></a>
+     </div>
+     <div class="hero-art"><img id="hero-image" class="canva-image" src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;w=800&amp;h=540&amp;fit=crop" alt="แล็ปท็อปบนโต๊ะทำงาน" loading="lazy">
+     </div>
+    </div>
+   </section>
+   <div class="wrap benefits">
+    <div class="benefit canva-card"><i data-lucide="package-check"></i>
+     <div><strong>สินค้าคัดสรร</strong><span>ไอทีและอุปกรณ์เสริมสำหรับทุกวัน</span>
+     </div>
+    </div>
+    <div class="benefit canva-card"><i data-lucide="layers-3"></i>
+     <div><strong>ครบ 3 หมวดหมู่</strong><span>คอมพิวเตอร์และอุปกรณ์เสริม</span>
+     </div>
+    </div>
+    <div class="benefit canva-card"><i data-lucide="sparkles"></i>
+     <div><strong>เลือกง่าย ใช้งานง่าย</strong><span>ค้นหาสินค้าที่ตรงกับคุณ</span>
+     </div>
+    </div>
+   </div>
+   <section id="products" class="section canva-section">
+    <div class="wrap">
+     <div class="section-head">
+      <div>
+       <h2>เลือกช้อปสินค้า</h2>
+       <p>ไอเท็มพร้อมเติมเต็มทุกไลฟ์สไตล์ดิจิทัล</p>
+      </div><span id="product-count" class="count canva-text"></span>
+     </div>
+     <div class="toolbar">
+      <div class="filters canva-tabs" id="filters"><button type="button" class="filter active canva-button" data-category="ทั้งหมด">ทั้งหมด</button><button type="button" class="filter canva-button" data-category="อุปกรณ์คอมพิวเตอร์">อุปกรณ์คอมพิวเตอร์</button><button type="button" class="filter canva-button" data-category="อุปกรณ์เสริมคอมพิวเตอร์">อุปกรณ์เสริมคอมพิวเตอร์</button><button type="button" class="filter canva-button" data-category="อุปกรณ์เสริมโทรศัพท์">อุปกรณ์เสริมโทรศัพท์</button>
+      </div>
+      <div class="catalog-controls">
+       <div class="catalog-control">
+        <label for="sort-select">เรียงตาม</label><select id="sort-select" class="canva-dropdown"><option value="default">ค่าเริ่มต้น</option><option value="price-asc">ราคาต่ำสุด</option><option value="price-desc">ราคาสูงสุด</option><option value="name-asc">ชื่อสินค้า A-Z</option><option value="name-desc">ชื่อสินค้า Z-A</option></select>
+       </div>
+       <div class="catalog-control">
+        <label for="layout-select">มุมมอง</label><select id="layout-select" class="canva-dropdown"><option value="grid">แบบปกติ</option><option value="list">แบบรายการ</option></select>
+       </div>
+       <div class="search"><i data-lucide="search"></i><label for="search-input" class="hidden">ค้นหาสินค้า</label><input id="search-input" class="canva-input" placeholder="ค้นหาสินค้า...">
+       </div>
+      </div>
+     </div>
+     <div id="load-state" class="load-state" role="status">
+      กำลังโหลดข้อมูลสินค้า...
+     </div>
+     <div id="product-grid" class="grid"></div>
+    </div>
+   </section>
+   <section id="workspace" class="wrap canva-section">
+    <div id="guest-panel" class="panel canva-panel">
+     <h2>ยินดีต้อนรับ 👋</h2>
+     <p>เลือกสินค้าและสั่งซื้อได้โดยไม่ต้องสมัครสมาชิก</p>
+    </div>
+    <div id="member-panel" class="hidden account-grid">
+     <div class="panel canva-panel">
+      <h2>พื้นที่สมาชิก</h2>
+      <p>ปรับชื่อที่แสดงสำหรับการใช้งานครั้งนี้</p>
+      <div class="field"><label for="member-name">ชื่อที่แสดง</label><input id="member-name" class="canva-input" maxlength="50" placeholder="ชื่อของคุณ">
+      </div><button id="save-name" type="button" class="primary canva-button" style="margin-top:14px">ใช้ชื่อนี้</button>
+      <p id="member-greeting" style="margin-top:13px"></p>
+     </div>
+     <div class="panel canva-panel">
+      <h2>ตะกร้าสินค้า</h2>
+      <p>ตรวจสอบรายการและยอดรวมก่อนตัดสินใจซื้อ</p>
+      <div id="cart-items"></div>
+      <div class="cart-total"><span>ยอดรวม</span><span id="cart-total">฿0</span>
+      </div>
+      <button id="checkout-button" class="primary" style="margin-top:14px">ดำเนินการชำระเงิน</button><div class="warning">
+       ระบบจำลองการชำระเงิน ไม่มีการเรียกเก็บเงินจริง
+      </div>
+     </div>
+    </div>
+    <div id="owner-panel" class="hidden"><div class="panel"><button id="logout" class="secondary">ออกจากระบบเจ้าของร้าน</button><h2>คำสั่งซื้อ</h2><div id="orders"></div></div>
+     <div class="panel canva-panel">
+      <h2 id="product-form-title">เพิ่มสินค้าใหม่</h2>
+      <p>จัดการข้อมูลและเลือกรูปภาพจากชุดภาพสินค้าที่เตรียมไว้</p>
+      <form id="product-form">
+       <div class="fields">
+        <div class="field"><label for="product-name">ชื่อสินค้า</label><input id="product-name" class="canva-input" required maxlength="90">
+        </div>
+        <div class="field"><label for="product-category">หมวดหมู่</label><select id="product-category" class="canva-dropdown"><option>อุปกรณ์คอมพิวเตอร์</option><option>อุปกรณ์เสริมคอมพิวเตอร์</option><option>อุปกรณ์เสริมโทรศัพท์</option></select>
+        </div>
+        <div class="field"><label for="product-price">ราคา (บาท)</label><input id="product-price" class="canva-input" type="number" min="0" step="0.01" required>
+        </div>
+        <div class="field"><label for="product-quantity">จำนวนสินค้า</label><input id="product-quantity" class="canva-input" type="number" min="0" step="1" required>
+        </div>
+        <div class="field"><label for="product-image">รูปภาพสินค้า</label><select id="product-image" class="canva-dropdown"><option value="laptop">แล็ปท็อป</option><option value="keyboard">คีย์บอร์ด</option><option value="mouse">เมาส์</option><option value="headphones">หูฟัง</option><option value="phone">โทรศัพท์</option><option value="charger">อุปกรณ์ชาร์จ</option></select><span class="image-note">รูปภาพเป็นตัวเลือกสำเร็จรูป ไม่รองรับอัปโหลดภาพในหน้านี้</span>
+        </div>
+        <div class="field full"><label for="product-description">รายละเอียดสินค้า</label><textarea id="product-description" class="canva-input" maxlength="400" required></textarea>
+        </div>
+       </div>
+       <div class="form-actions"><button id="save-product" type="submit" class="primary canva-button">บันทึกสินค้า</button><button id="cancel-edit" type="button" class="secondary canva-button hidden">ยกเลิกการแก้ไข</button>
+       </div>
+      </form>
+      <div id="record-limit" class="load-state"></div>
+     </div>
+     <div class="panel canva-panel">
+      <h2>ข้อมูลร้าน</h2>
+      <p>ข้อความนี้จะแสดงในส่วนเกี่ยวกับร้าน</p>
+      <form id="store-form">
+       <div class="field"><label for="store-detail">รายละเอียดร้าน</label><textarea id="store-detail" class="canva-input" maxlength="500" required></textarea>
+       </div>
+       <div class="form-actions"><button id="save-store" type="submit" class="primary canva-button">บันทึกข้อมูลร้าน</button>
+       </div>
+      </form>
+     </div>
+     <p class="warning">บัญชีสาธิตเท่านั้น การตรวจสอบรหัสผ่านในเบราว์เซอร์ไม่ใช่ระบบรักษาความปลอดภัยจริง</p>
+    </div>
+   </section>
+   <section id="about" class="about canva-section">
+    <div class="wrap about-inner">
+     <div>
+      <h2>เกี่ยวกับไอทีคอร์เนอร์</h2>
+      <p id="store-description">พื้นที่รวมอุปกรณ์ไอทีและแก็ดเจ็ตสำหรับการทำงาน การเรียน และทุกวันของคุณ</p>
+     </div><i data-lucide="monitor-smartphone" style="width:54px;height:54px;color:#2c86be"></i>
+    </div>
+   </section>
+  </main>
+  <footer class="footer canva-footer">
+   <div class="wrap footer-inner"><span>© ไอทีคอร์เนอร์ · เทคโนโลยีที่เข้ากับทุกวัน</span><span>อุปกรณ์คอมพิวเตอร์ · อุปกรณ์เสริม · แก็ดเจ็ต</span>
+   </div>
+  </footer>
+  <dialog id="login" class="panel" style="width:min(420px,95%);margin:auto"><h2>เข้าสู่ระบบเจ้าของร้าน</h2><form id="login-form"><div class="field"><label>ชื่อผู้ใช้</label><input id="username" required autocomplete="username"></div><div class="field"><label>รหัสผ่าน</label><input id="password" type="password" required autocomplete="current-password"></div><label><input type="checkbox" id="show-password"> แสดงรหัสผ่าน</label><p id="login-error" role="alert"></p><div class="form-actions"><button class="primary">เข้าสู่ระบบ</button><button type="button" id="cancel-login" class="secondary">ยกเลิก</button></div><p>บัญชีทดสอบ: admin / Admin1234</p></form></dialog>
+<dialog id="checkout" class="panel" style="width:min(560px,95%);margin:auto"><h2>ชำระเงิน / สั่งซื้อ</h2><p>ระบบสาธิต ไม่ต้องโอนเงินจริง</p><form id="checkout-form"><div class="field"><label>ชื่อ-นามสกุล</label><input id="buyer" required></div><div class="field"><label>เบอร์โทรศัพท์</label><input id="phone" type="tel" required></div><div class="field"><label>ที่อยู่จัดส่ง</label><textarea id="address" required></textarea></div><div class="field"><label>วิธีชำระเงิน</label><select id="payment"><option>พร้อมเพย์ (จำลอง)</option><option>โอนเงิน (จำลอง)</option><option>เก็บเงินปลายทาง</option></select></div><p id="checkout-total"></p><div class="form-actions"><button class="primary">ยืนยันคำสั่งซื้อ</button><button type="button" id="cancel-checkout" class="secondary">ยกเลิก</button></div></form></dialog><div id="notice" class="notice hidden" role="status" aria-live="polite"></div>
+  <script>
+    const imageMap={
+      laptop:"https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800&h=540&fit=crop",
+      keyboard:"https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=800&h=540&fit=crop",
+      mouse:"https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=800&h=540&fit=crop",
+      headphones:"https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=800&h=540&fit=crop",
+      phone:"https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800&h=540&fit=crop",
+      charger:"https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg?auto=compress&cs=tinysrgb&w=800&h=540&fit=crop"
+    };
+    const samples=[
+      {item_key:"sample-laptop",name:"แล็ปท็อปสำหรับทุกวัน",price:18900,quantity:12,description:"พร้อมลุยทั้งงาน เรียน และความบันเทิง",category:"อุปกรณ์คอมพิวเตอร์",image_key:"laptop"},
+      {item_key:"sample-keyboard",name:"คีย์บอร์ดเกมมิ่ง",price:1590,quantity:24,description:"สัมผัสแม่นยำ เติมสีสันให้โต๊ะทำงาน",category:"อุปกรณ์เสริมคอมพิวเตอร์",image_key:"keyboard"},
+      {item_key:"sample-headphones",name:"หูฟังไร้สาย",price:2290,quantity:18,description:"เสียงคมชัดสำหรับทุกเพลย์ลิสต์",category:"อุปกรณ์เสริมโทรศัพท์",image_key:"headphones"},
+      {item_key:"sample-phone",name:"สมาร์ตโฟนคู่ใจ",price:12900,quantity:9,description:"เชื่อมต่อทุกเรื่องสำคัญได้ทุกที่",category:"อุปกรณ์เสริมโทรศัพท์",image_key:"phone"}
+    ];
+    const $=id=>document.getElementById(id);
+    let backendRecords=[],ready=false,role="guest",category="ทั้งหมด",editing=null,cart={},noticeTimer,loadTimer;
+    const money=n=>"฿"+Number(n||0).toLocaleString("th-TH",{maximumFractionDigits:2});
+    const products=()=>{const saved=backendRecords.filter(r=>r.record_type==="product");return saved};
+    function notify(message){const el=$("notice");el.textContent=message;el.classList.remove("hidden");clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>el.classList.add("hidden"),5000)}
+    function icon(){if(window.lucide)lucide.createIcons()}
+    function renderProducts(){
+      const shown=products().filter(p=>(category==="ทั้งหมด"||p.category===category)&&(`${p.name} ${p.description}`).toLowerCase().includes($("search-input").value.trim().toLowerCase()));
+      const sort=$("sort-select").value;
+      if(sort==="price-asc")shown.sort((a,b)=>Number(a.price)-Number(b.price));
+      else if(sort==="price-desc")shown.sort((a,b)=>Number(b.price)-Number(a.price));
+      else if(sort==="name-asc")shown.sort((a,b)=>a.name.localeCompare(b.name,"th",{numeric:true}));
+      else if(sort==="name-desc")shown.sort((a,b)=>b.name.localeCompare(a.name,"th",{numeric:true}));
+      $("product-count").textContent=`${shown.length} รายการ`;
+      const grid=$("product-grid");grid.classList.toggle("list-view",$("layout-select").value==="list");grid.replaceChildren();
+      if(!shown.length){const empty=document.createElement("div");empty.className="empty canva-panel";empty.textContent="ไม่พบสินค้าในหมวดหมู่หรือคำค้นหานี้";grid.append(empty);return}
+      shown.forEach((p,index)=>{
+        const card=document.createElement("article");card.className="card canva-card";card.dataset.key=p.item_key;
+        const imageBox=document.createElement("div");imageBox.className="card-image";
+        const img=document.createElement("img");img.id="product-image-"+index;img.className="canva-image";img.src=imageMap[p.image_key]||imageMap.laptop;img.alt="ภาพสินค้า "+p.name;img.loading="lazy";imageBox.append(img);card.append(imageBox);
+        const body=document.createElement("div");body.className="card-body";
+        const tag=document.createElement("span");tag.className="tag canva-tag";tag.textContent=p.category;body.append(tag);
+        const title=document.createElement("h3");title.textContent=p.name;body.append(title);
+        const desc=document.createElement("p");desc.className="description";desc.textContent=p.description;body.append(desc);
+        const stock=document.createElement("p");stock.className="stock"+(p.quantity<=0?" out":"");stock.textContent=p.quantity>0?`มีสินค้า ${p.quantity} ชิ้น`:"สินค้าหมด";body.append(stock);
+        const bottom=document.createElement("div");bottom.className="card-bottom";const price=document.createElement("span");price.className="price";price.textContent=money(p.price);bottom.append(price);
+        if(role!=="owner"){const add=document.createElement("button");add.type="button";add.className="small-btn canva-button";add.textContent="＋ ใส่ตะกร้า";add.disabled=p.quantity<=0;add.addEventListener("click",()=>{const current=cart[p.item_key]||0;if(current>=p.quantity)return notify("จำนวนสินค้าในตะกร้าถึงจำนวนที่มีแล้ว");cart[p.item_key]=current+1;renderCart();notify("เพิ่มลงตะกร้าแล้ว")});bottom.append(add);const buy=document.createElement("button");buy.className="small-btn";buy.textContent="ซื้อเลย";buy.disabled=p.quantity<=0;buy.onclick=()=>{if(!cart[p.item_key])cart[p.item_key]=1;renderCart();openCheckout()};bottom.append(buy)}
+        body.append(bottom);
+        if(role==="owner"){const actions=document.createElement("div");actions.className="owner-actions";const edit=document.createElement("button");edit.type="button";edit.className="canva-button";edit.textContent="แก้ไข";edit.addEventListener("click",()=>editProduct(p));actions.append(edit);if(p.__backendId){const del=document.createElement("button");del.type="button";del.className="canva-button";del.textContent="ลบ";del.addEventListener("click",()=>deleteProduct(p,del));actions.append(del)}body.append(actions)}
+        card.append(body);grid.append(card);
+      });
+    }
+    function renderCart(){const area=$("cart-items");area.replaceChildren();let total=0;for(const [key,qty] of Object.entries(cart)){const p=products().find(x=>x.item_key===key);if(!p||qty<=0)continue;total+=p.price*qty;const row=document.createElement("div");row.className="cart-row canva-list";const info=document.createElement("span");info.textContent=`${p.name} × ${qty} — ${money(p.price*qty)}`;row.append(info);const controls=document.createElement("span");for(const [label,delta] of [["−",-1],["+",1]]){const b=document.createElement("button");b.type="button";b.className="canva-button";b.textContent=label;b.setAttribute("aria-label",(delta<0?"ลด":"เพิ่ม")+"จำนวน "+p.name);b.addEventListener("click",()=>{cart[key]=Math.max(0,Math.min(p.quantity,(cart[key]||0)+delta));if(!cart[key])delete cart[key];renderCart()});controls.append(b)}row.append(controls);area.append(row)}if(!area.children.length)area.textContent="ยังไม่มีสินค้าในตะกร้า";$("cart-total").textContent=money(total);$("cart-count").textContent=Object.values(cart).reduce((a,b)=>a+b,0);$("checkout-button").disabled=!total;$("checkout-total").textContent="ยอดสุทธิ "+money(total)}
+    function renderRole(){if($("role-select").value==="owner"&&!authenticated){$("role-select").value=role;$("login").showModal();return}role=$("role-select").value;$("guest-panel").classList.toggle("hidden",role!=="guest");$("member-panel").classList.toggle("hidden",role==="owner");$("owner-panel").classList.toggle("hidden",role!=="owner");renderProducts();renderCart()}
+    function editProduct(p){editing=p.__backendId||p.item_key;$("product-form-title").textContent="แก้ไขสินค้า";$("product-name").value=p.name;$("product-category").value=p.category;$("product-price").value=p.price;$("product-quantity").value=p.quantity;$("product-description").value=p.description;$("product-image").value=p.image_key;$("cancel-edit").classList.remove("hidden");$("workspace").scrollIntoView({behavior:"smooth"})}
+    function resetProductForm(){editing=null;$("product-form").reset();$("product-form-title").textContent="เพิ่มสินค้าใหม่";$("cancel-edit").classList.add("hidden")}
+    function setPending(button,pending,label){if(pending){button.dataset.oldLabel=button.textContent;button.textContent=label;button.disabled=true}else{button.textContent=button.dataset.oldLabel||button.textContent;button.disabled=false}}
+    function limitCheck(){if(backendRecords.length>=999){notify("ข้อมูลเต็ม 999 รายการ ไม่สามารถเพิ่มรายการใหม่ได้");return true}return false}
+    async function deleteProduct(p,button){if(!authenticated||role!=="owner")return;if(button.dataset.confirm!=="yes"){button.dataset.confirm="yes";button.textContent="ยืนยันลบ?";setTimeout(()=>{if(button.isConnected&&!button.disabled){button.dataset.confirm="";button.textContent="ลบ"}},4000);return}const current=backendRecords.find(r=>r.__backendId===p.__backendId);if(!current)return notify("ไม่พบรายการนี้แล้ว");setPending(button,true,"กำลังลบ...");try{const result=await window.dataSdk.delete(current);if(!result.isOk)notify("ไม่สามารถยืนยันการลบได้ กรุณารีเฟรชก่อนลองอีกครั้ง");else{button.closest(".card")?.remove();notify("ลบสินค้าแล้ว")}}catch(e){notify("ไม่สามารถยืนยันการลบได้ กรุณารีเฟรชก่อนลองอีกครั้ง")}finally{setPending(button,false);button.dataset.confirm=""}}
+    $("product-form").addEventListener("submit",async e=>{e.preventDefault();if(!authenticated||role!=="owner")return notify("กรุณาเข้าสู่ระบบเจ้าของร้าน");if(!ready)return notify("ข้อมูลยังไม่พร้อม กรุณาลองใหม่");const button=e.submitter||$("save-product");const prior=editing?products().find(p=>p.__backendId===editing||p.item_key===editing):null;const record={record_type:"product",item_key:prior?.item_key||("product-"+Date.now()+"-"+Math.random().toString(36).slice(2,7)),name:$("product-name").value.trim(),price:Number($("product-price").value),quantity:Number($("product-quantity").value),description:$("product-description").value.trim(),category:$("product-category").value,image_key:$("product-image").value,store_detail:""};if(!record.name||!record.description)return notify("กรุณากรอกชื่อและรายละเอียดสินค้า");if(!prior?.__backendId&&limitCheck())return;setPending(button,true,"กำลังบันทึก...");try{const result=prior?.__backendId?await window.dataSdk.update({...backendRecords.find(r=>r.__backendId===prior.__backendId),...record}):await window.dataSdk.create(record);if(!result.isOk)notify("ไม่สามารถยืนยันการบันทึกได้ กรุณารีเฟรชก่อนลองอีกครั้ง");else{notify("บันทึกสินค้าแล้ว");resetProductForm()}}catch(e){notify("ไม่สามารถยืนยันการบันทึกได้ กรุณารีเฟรชก่อนลองอีกครั้ง")}finally{setPending(button,false)}});
+    $("store-form").addEventListener("submit",async e=>{e.preventDefault();if(!authenticated||role!=="owner")return notify("กรุณาเข้าสู่ระบบเจ้าของร้าน");if(!ready)return notify("ข้อมูลยังไม่พร้อม กรุณาลองใหม่");const button=e.submitter||$("save-store"),detail=$("store-detail").value.trim(),prior=backendRecords.find(r=>r.record_type==="store");if(!detail)return notify("กรุณากรอกรายละเอียดร้าน");if(!prior&&limitCheck())return;const record={record_type:"store",item_key:"store-info",name:"",price:0,quantity:0,description:"",category:"",image_key:"",store_detail:detail};setPending(button,true,"กำลังบันทึก...");try{const result=prior?await window.dataSdk.update({...prior,...record}):await window.dataSdk.create(record);if(!result.isOk)notify("ไม่สามารถยืนยันการบันทึกได้ กรุณารีเฟรชก่อนลองอีกครั้ง");else notify("บันทึกข้อมูลร้านแล้ว")}catch(e){notify("ไม่สามารถยืนยันการบันทึกได้ กรุณารีเฟรชก่อนลองอีกครั้ง")}finally{setPending(button,false)}});
+    $("cancel-edit").addEventListener("click",resetProductForm);$("role-select").addEventListener("change",renderRole);$("search-input").addEventListener("input",renderProducts);$("sort-select").addEventListener("change",renderProducts);$("layout-select").addEventListener("change",renderProducts);
+    $("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-category]");if(!b)return;category=b.dataset.category;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderProducts()});
+    $("save-name").addEventListener("click",()=>{const name=$("member-name").value.trim();$("member-greeting").textContent=name?"สวัสดี "+name+"!":"";notify(name?"อัปเดตชื่อที่แสดงสำหรับการใช้งานครั้งนี้แล้ว":"กรุณากรอกชื่อที่แสดง")});
+    const handler={onDataChanged(data){clearTimeout(loadTimer);ready=true;backendRecords=data;$("load-state").textContent="";$("record-limit").textContent=backendRecords.length>=950?`ใช้ข้อมูลแล้ว ${backendRecords.length} จาก 999 รายการ`:"";const detail=backendRecords.find(r=>r.record_type==="store")?.store_detail||"พื้นที่รวมอุปกรณ์ไอทีและแก็ดเจ็ตสำหรับการทำงาน การเรียน และทุกวันของคุณ";$("store-description").textContent=detail;if(document.activeElement!==$("store-detail"))$("store-detail").value=detail;renderProducts();renderCart()}};
+    async function init(){ready=false;$("load-state").innerHTML='กำลังโหลดข้อมูลสินค้า...';clearTimeout(loadTimer);loadTimer=setTimeout(()=>{$("load-state").innerHTML='โหลดข้อมูลไม่สำเร็จ <button type="button" id="retry-load" class="secondary canva-button">ลองอีกครั้ง</button>';$("retry-load").addEventListener("click",init)},8000);try{const result=await window.dataSdk.init(handler);if(!result.isOk){clearTimeout(loadTimer);$("load-state").innerHTML='เชื่อมต่อข้อมูลไม่สำเร็จ <button type="button" id="retry-load" class="secondary canva-button">ลองอีกครั้ง</button>';$("retry-load").addEventListener("click",init)}}catch(e){clearTimeout(loadTimer);$("load-state").innerHTML='เชื่อมต่อข้อมูลไม่สำเร็จ <button type="button" id="retry-load" class="secondary canva-button">ลองอีกครั้ง</button>';$("retry-load").addEventListener("click",init)}}
+    let authenticated=false;
+    const storageKey="it-corner-demo-v2";
+    let records;try{records=JSON.parse(localStorage.getItem(storageKey))}catch(e){};if(!Array.isArray(records))records=samples.map(p=>({...p,record_type:"product",__backendId:p.item_key}));
+    function persist(next){localStorage.setItem(storageKey,JSON.stringify(next));records=next;handler.onDataChanged(records);renderOrders()}
+    window.dataSdk={init:async h=>{h.onDataChanged(records);return {isOk:true}},create:async r=>{persist([...records,{...r,__backendId:crypto.randomUUID()}]);return {isOk:true}},update:async r=>{persist(records.map(x=>x.__backendId===r.__backendId?r:x));return {isOk:true}},delete:async r=>{persist(records.filter(x=>x.__backendId!==r.__backendId));return {isOk:true}}};
+    $("login-form").onsubmit=e=>{e.preventDefault();if($("username").value!=="admin"||$("password").value!=="Admin1234"){$("login-error").textContent="ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";return}authenticated=true;$("login").close();e.target.reset();$("login-error").textContent="";$("role-select").value="owner";renderRole();renderOrders();$("workspace").scrollIntoView()};
+    $("show-password").onchange=e=>$("password").type=e.target.checked?"text":"password";
+    $("cancel-login").onclick=()=>$("login").close();$("login").onclose=()=>{$("login-form").reset();$("password").type="password";$("login-error").textContent=""};
+    $("logout").onclick=()=>{authenticated=false;$("role-select").value="guest";resetProductForm();renderRole()};
+    function openCheckout(){if(!Object.keys(cart).length)return notify("กรุณาเลือกสินค้า");$("checkout").showModal()}
+    $("checkout-button").onclick=openCheckout;$("cancel-checkout").onclick=()=>$("checkout").close();
+    $("checkout-form").onsubmit=e=>{e.preventDefault();const items=Object.entries(cart).map(([key,qty])=>({p:products().find(x=>x.item_key===key),qty}));if(!items.length||items.some(x=>!x.p||x.qty>x.p.quantity))return notify("สินค้าไม่เพียงพอ");const id="IT-"+Date.now();const total=items.reduce((n,x)=>n+x.p.price*x.qty,0);const order={record_type:"order",__backendId:id,name:$("buyer").value,phone:$("phone").value,address:$("address").value,payment:$("payment").value,price:total,status:$("payment").selectedIndex===2?"รอชำระปลายทาง":"ชำระแล้ว (จำลอง)",description:items.map(x=>x.p.name+" × "+x.qty).join(", ")};try{persist([...records.map(r=>({...r,quantity:r.record_type==="product"?r.quantity-(cart[r.item_key]||0):r.quantity})),order]);cart={};renderCart();$("checkout").close();e.target.reset();notify("สั่งซื้อสำเร็จ "+id+" • "+money(total))}catch(err){notify("บันทึกคำสั่งซื้อไม่สำเร็จ")}};
+    function renderOrders(){const area=$("orders");area.replaceChildren();if(!authenticated)return;const orders=records.filter(r=>r.record_type==="order");if(!orders.length)area.textContent="ยังไม่มีคำสั่งซื้อ";orders.forEach(o=>{const row=document.createElement("div");row.className="cart-row";const info=document.createElement("span");info.textContent=[o.__backendId,o.name,o.phone,o.address,o.description,money(o.price),o.payment,o.status].join(" • ");row.append(info);area.append(row)})}
+    $("layout-select").value=localStorage.getItem("it-layout")==="list"?"list":"grid";$("layout-select").addEventListener("change",()=>localStorage.setItem("it-layout",$("layout-select").value));
+    renderRole();icon();init();
+  </script>
+ </body>
+</html>
